@@ -620,3 +620,6 @@ button.owl-dot span {
 .owl-carousel .owl-dots.disabled, .owl-carousel {
 	display: block !important;
 }
+.makeupimg {
+    text-align: right;
+}
