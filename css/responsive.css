@@ -104,9 +104,14 @@
 	
 }
 @media only screen and (max-width:767px){
-	.sec-bord-back{
-	
+	.sec-bord-back{	
 	height: auto;
+	}
+	.margin-top-gallery {
+		margin-top: -25px !important;
+	}
+	.img-ga {
+		width: 100%;
 	}
 	.sec-new-f {
 		font-size: 80px;
