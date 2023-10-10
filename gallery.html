@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colorrs Salon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/samall-logo.png">
+</head>
+
+<body>
+    <header class="absolute-header">
+        <div class="main-menu-wrapper">
+            <div class="container-fluid p-0">
+                <!-- header -->
+                <div include-html="header.html" id="header-file"></div>
+            </div>
+        </div>
+    </header>
+    <div class="banner-section-wrapper page-title-banner">
+        <div class="container-fluid">
+            <div class="left-right-space">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 pt-5">
+                        <h1 class="mb-5"> The Gallery</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery -->
+    <div class="container-fluid margin-top-gallery pb-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="text-center pb-5">
+                    <img src="images/g1.png" alt="">
+                </div>
+                <div class="">
+                    <img src="images/g2.png" alt="">
+                </div>
+
+            </div>
+            <div class="col-lg-4 sec-fl-imtrxt ">
+                <div class="text-center">
+
+                    <img class="img-ga" src="images/g3.png" alt="">
+                </div>
+                <div class="sec-textgg">
+                    <p>Elevate your beauty experience at Colorrs Salon. Our expert team offers an array of services
+                        tailored
+                        just for you. From precision haircuts and custom color treatments to luxurious spa sessions, we
+                        ensure every visit leaves you feeling rejuvenated and confident.</p>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="text-center pb-5">
+                    <img class="img-fluid pt-4" src="images/g4.png" alt="">
+                </div>
+                <div class="text-end">
+                    <img src="images/g5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- galler-slider -->
+    <div class="owl-two owl-carousel owl-theme threeslider pt-5 pb-5">
+        <div class="item">
+            <img src="images/gg1.png" alt="">
+        </div>
+        <div class="item">
+            <img src="images/gg2.png" alt="">
+        </div>
+        <div class="item">
+            <img src="images/gg3.png" alt="">
+        </div>
+        <div class="item">
+            <img src="images/gg2.png" alt="">
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer>
+        <!-- footer -->
+        <div include-html="footer.html" id="footer-file"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+            integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+            async></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="js/include-html.min.js"></script>
+        <script>
+
+
+            $(document).ready(function () {
+                $('.owl-two').owlCarousel({
+                    loop: true,
+                center: true,
+                margin: 10,
+                dots: true,
+                nav:false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav:false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav:false,
+                        loop: true
+                    }
+                }
+                });
+              
+
+            });
+
+
+        </script>
+    </footer>
+</body>
+
+</html>
