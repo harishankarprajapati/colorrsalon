@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -39,17 +40,19 @@
                 <div class="container-fluid">
                     <div class="left-right-space">
                         <div class="row">
-                            <div class="col-lg-5 col-md-6 pt-5 sec-back-fl">
+                            <div class="col-lg-5 col-md-6 pt-5 sec-back-fl"   data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <h2 class="mb-5">Your Journey <br>
                                     to Timeless Bridal<br>
                                     Beauty Begins Here
-                                </h2    >
+                                </h2>
                                 <div class="d-grid gap-2 d-md-block banner-buttons mt-5">
-                                    <a href="https://app2023.13designstreet.com/colorrs_salon/webapp/" target="_blank" class="btn button-style" type="button">Book Appointment</a>
-                                    <a href="about.html" class="btn button-style border-button" type="button">Learn More</a>
+                                    <a href="https://app2023.13designstreet.com/colorrs_salon/webapp/" target="_blank"
+                                        class="btn button-style" type="button">Book Appointment</a>
+                                    <a href="about.html" class="btn button-style border-button" type="button">Learn
+                                        More</a>
                                 </div>
                             </div>
-                            <div class="col-lg-7 col-md-6">
+                            <div class="col-lg-7 col-md-6"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="banner-image text-center"><img src="images/bnnimg.jpg" class="img-fluid">
                                 </div>
                             </div>
@@ -169,7 +172,8 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <a href="treatments.html" class="btn button-style border-button width200" type="button">View All Services</a>
+                        <a href="treatments.html" class="btn button-style border-button width200" type="button">View All
+                            Services</a>
                     </div>
                 </div>
             </div>
@@ -179,7 +183,7 @@
     <div class="container-fluid sec-bg-counter ">
         <div class="counter-s-fle">
             <div class="four">
-                <div class="counter-box colored"> <span class="counter">1000 </span>  <span>+</span>
+                <div class="counter-box colored"> <span class="counter">1000 </span> <span>+</span>
                     <p>Bridal Makeover</p>
                 </div>
             </div>
@@ -267,11 +271,12 @@
             </div>
         </div>
     </div>
- 
+
     <footer>
         <!-- footer -->
         <div include-html="footer.html" id="footer-file"></div>
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
             integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
             async></script>
@@ -317,6 +322,11 @@
                 });
 
             });
+        </script>
+
+
+        <script>
+            AOS.init();
         </script>
     </footer>
 </body>
